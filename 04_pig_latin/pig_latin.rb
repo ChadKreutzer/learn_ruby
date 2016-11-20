@@ -14,4 +14,3 @@ def pigize word
   pig = word[beg.length, word.length - beg.length] + beg + 'ay'
   word == word.capitalize ? pig.capitalize : pig
 end
-
