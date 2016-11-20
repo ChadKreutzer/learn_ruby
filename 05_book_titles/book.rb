@@ -8,7 +8,7 @@ class Book
   end
   
   private
-  Small_words = /\b(an?d?|in|of|over|the)\b/
+  Small_words = /\b(an?d?|in|of|the)\b/
   
   def capitalize_non_small test_word
     
@@ -20,3 +20,10 @@ class Book
   end
   
 end
+
+# class Book
+#   attr_reader :title
+#   def title=(input)
+#     @title = input.capitalize.split.map{|x| /\b(an?d?|in|of|the)\b/.match(x) ? x : x.capitalize}*' '
+#   end
+# end

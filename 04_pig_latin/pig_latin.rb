@@ -15,17 +15,3 @@ def pigize word
   word == word.capitalize ? pig.capitalize : pig
 end
 
-# def translate(x)
-#   vowels = "a" || "e" || "i" || "o" || "u"
-#   test = []
-#   x.split.each do |x|
-#     if x[0].include? vowels
-#       test.push(x + 'ay')
-#     elsif !x[0].include?(vowels) && x[1].include?(vowels)
-#       test.push(x[1..x.length] + x[0] + 'ay')
-#     elsif !x[0].include?(vowels) && !x[1].include?(vowels)
-#       test.push(x[2..x.length] + x[0..1] + 'ay')
-#     end
-#   end
-#   test.join(' ')
-# end

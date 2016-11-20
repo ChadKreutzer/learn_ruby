@@ -24,15 +24,7 @@ def first_word input
 end
 
 def titleize input
-  # and over the
-  temp = input.split
-  temp.map! do |x|
-    if /(and|over|the)/.match(x) == nil
-      x.capitalize
-    else
-      x
-    end
-  end
-  temp[0].capitalize!
-  temp.join(' ') 
+  input.capitalize.split.map do |x|
+    /(and|over|the)/.match(x) ? x : x.capitalize
+  end.join(' ')
 end
